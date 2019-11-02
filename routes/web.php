@@ -25,6 +25,8 @@ Route::get('blog1/{id}', function ($id) {
 Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
     return view('tarea41/blog2', ['id'=> $id, 'nombre' => $nombre]);
 })->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'));
+//equivalente:
+//->where(['id' => '[0-9]+', 'name' => '[a-zA-Z]+']);
 
 // Otra posibilidad para restringir el formato de los parámetros de las rutas
 Route::pattern('id', '[0-9]+');
@@ -35,7 +37,7 @@ Route::get('/saludo', 'SaludoController@saludo')->name('saludo');
 Route::get('/saludonombre/{nombre}', 'SaludoController@saludoNombre')->name('saludoNombre');
 Route::get('/saludonombrecolor/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
 
-
+/**********  Tarea 4.3 ***********/
 
 
 

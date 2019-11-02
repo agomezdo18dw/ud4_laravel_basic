@@ -22,9 +22,9 @@
             <div class="card">
                 <span class="titulo">Tarea 4.2</span>
                 <div class ="subtarea">
-                    <p><a href="saludo">a) Saludo</a></p>
-                    <p><a href="saludonombre/ajuanena">b) Saludo con nombre</a></p>
-                    <p><a href="saludonombrecolor/ajuanena/FF00FF">c) Saludo con nombre y color</a></p>
+                    <p><a href="{{route('saludo')}}">a) Saludo</a></p>
+                    <p><a href="{{route('saludoNombre',['nombre' => 'ajuanena'])}}">b) Saludo con nombre</a></p>
+                    <p><a href="{{route('saludoNombreColor',['nombre' => 'ajuanena','color' =>'FF00FF'])}}">c) Saludo con nombre y color</a></p>
                 </div>
                 </div>
         </div>
