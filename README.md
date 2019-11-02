@@ -15,7 +15,7 @@ Todas tareas tienen que estar disponibles al mismo tiempo.
 Crea un controlador 'SaludoController' para implementar:
 * a) Crea una ruta (saludo) y asignale un nombre, que devuelve en la vista correspondiente "Kaixo!".
 * b) Crea una ruta (saludo) y asignale un nombre, que reciba como parametro un nombre y que devuelve en la vista correspondiente "Kaixo *nombre*!".
-* c) Crea una ruta (saludo) y asignale un nombre, que reciba dos parámetros: un nombre y un color (hexadecimal) que devuelve en la vista correspondiente "Kaixo *nombre*!" en el color indicado. Así mismo el segundo parámetro será *opcional*, en caso de no indicarse, será 'anónimo'.
+* c) Crea una ruta (saludo) y asignale un nombre, que reciba dos parámetros: un nombre y un color (hexadecimal) que devuelve en la vista correspondiente "Kaixo *nombre*!" en el color indicado. Así mismo el segundo parámetro será *opcional*, en caso de no indicarsemen color 'azul'.
 
 **TAREA 4.3 Formularios**
 * a) Crea un formulario de contacto (nombre, apellido) con el método GET y muestra los datos introducidos en la vista creada en el punto anterior de tal manera que se muestre "Kaixo *nombre* *apellido*!".

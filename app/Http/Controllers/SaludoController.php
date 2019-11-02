@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 class SaludoController extends Controller
 {
     function saludo(){
-        return view('saludo');
+        return view('tarea42/saludo');
     }
-    function saludoConNombre($nombre){
-        return view('saludoConNombre',['nombre'=>$nombre]);
+    function saludoNombre($nombre){
+        return view('tarea42/saludoNombre',['nombre'=>$nombre]);
     }
-    function saludoConNombreColor($nombre,$color='01DF01'){
-        return view('saludoConNombreColor',['nombre'=>$nombre, 'color'=>$color]);
+    function saludoNombreColor($nombre,$color='0000FF'){
+        return view('tarea42/saludoNombreColor',['nombre'=>$nombre, 'color'=>$color]);
     }
 }

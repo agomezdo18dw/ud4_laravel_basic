@@ -12,27 +12,28 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
+/**********  Tarea 4.1 ***********/
 Route::get('contacto', function () {
-    return view('contacto');
+    return view('tarea41/contacto');
 });
-
-Route::get('blog/{id}', function ($id) {
-    return view('blog', ['id'=> $id]);
+Route::get('blog1/{id}', function ($id) {
+    return view('tarea41/blog1', ['id'=> $id]);
 });
+Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
+    return view('tarea41/blog2', ['id'=> $id, 'nombre' => $nombre]);
+})->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'));
 
+// Otra posibilidad para restringir el formato de los parámetros de las rutas
 Route::pattern('id', '[0-9]+');
 Route::pattern('nombre', '[a-zA-Z]+');
 
-Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
-    return view('blog2', ['id'=> $id, 'nombre' => $nombre]);
-})->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'));
-
+/**********  Tarea 4.2 ***********/
 Route::get('/saludo', 'SaludoController@saludo')->name('saludo');
-Route::get('/saludoConNombre/{nombre}', 'SaludoController@saludoConNombre')->name('saludoConNombre');
-Route::get('/saludoConNombreColor/{nombre}/{color?}', 'SaludoController@saludoConNombreColor')->name('saludoConNombreColor');
+Route::get('/saludonombre/{nombre}', 'SaludoController@saludoNombre')->name('saludoNombre');
+Route::get('/saludonombrecolor/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
 
 
 
