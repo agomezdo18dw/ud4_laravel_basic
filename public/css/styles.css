@@ -49,3 +49,8 @@
     text-align: left;
 	  padding-bottom: 5%;
   }
+
+  .error{
+    color:red;
+    font-size:12px;
+  }
