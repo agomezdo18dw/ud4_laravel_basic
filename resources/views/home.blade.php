@@ -28,6 +28,25 @@
                 </div>
                 </div>
         </div>
+        <div class="column">
+            <div class="card">
+                <span class="titulo">Tarea 4.3</span>
+                <div class ="subtarea">
+                    <p><a href="{{route('createForm1')}}">a) Formulario de contacto GET</a></p>
+                    <p><a href="{{route('createForm2')}}">b) Formulario de contacto POST</a></p>
+                    <p><a href="{{route('createForm3')}}">c) Formulario y saludo misma vista</a></p>
+                </div>
+                </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <span class="titulo">Tarea 4.4</span>
+                <div class ="subtarea">
+                    <p><a href="{{route('createForm4')}}">a) Validación de formulario</a></p>
+                    <p><a href="{{route('createForm5')}}">b) Validación de formulario a través de controlador Request y mensajes personalizados.</a></p>
+                </div>
+                </div>
+        </div>
 
     </div>
 
