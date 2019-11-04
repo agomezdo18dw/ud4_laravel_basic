@@ -11,7 +11,6 @@ Todas tareas tienen que estar disponibles al mismo tiempo.
 * c) Crea una ruta (blog) que reciba dos parámetros, un identificador y un nombre, y muestre en la vista "Este es el artículo número 'identificador' de 'nombre'. Restringe el formato de los parámetros de tal manera que identificador sea numerico y nombre contenga caracteres de la a-z/A-Z. 
 
 **TAREA 4.2 Rutas Vista Controlador**
-
 Crea un controlador 'SaludoController' para implementar:
 * a) Crea una ruta (saludo) y asignale un nombre, que devuelve en la vista correspondiente "Kaixo!".
 * b) Crea una ruta (saludo) y asignale un nombre, que reciba como parametro un nombre y que devuelve en la vista correspondiente "Kaixo *nombre*!".
@@ -28,6 +27,7 @@ Realiza las siguientes validaciones (todos los campos son obligatorios salvo tel
     - nombre: string de entre 2 y 15 caracteres
     - nombre: string de entre 2 y 20 caracteres
     - email: formato correcto 
-    - teléfono: 6xxxxxxxx y 7xxxxxxxx
+    - teléfono: 6xxxxxxxx, 7xxxxxxxx y 9xxxxxxxx
 Si se introducen los datos correctamente deberá mostralos en una vista, en caso contrario deberá indicar que dato(s) no son correctos. 
 
+* b) Haz la validación usando un controlador y personaliza los mensajes de error.
